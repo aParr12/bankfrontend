@@ -32,6 +32,8 @@ interface User {
   balance: number;
 }
 
+app.use(express.static("build"));
+
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
