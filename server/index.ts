@@ -3,11 +3,14 @@ import bodyParser from "body-parser";
 import MongoDBStore from "connect-mongodb-session";
 import cookieParser from "cookie-parser";
 import cors from "cors";
+import { config } from "dotenv";
 import express, { Request, Response } from "express";
 import session from "express-session";
 import { MongoClient } from "mongodb";
 import { v4 as uuid } from "uuid";
 import { sessionSecret } from "./secret";
+
+config();
 
 declare module "express-session" {
   interface SessionData {
@@ -22,7 +25,7 @@ const mongoOptions = "?authSource=admin";
 const client = new MongoClient(`${mongoBaseUrl}${mongoOptions}`);
 
 const app = express();
-const port = 3001;
+const port = process?.env?.PORT ?? 3001;
 
 interface User {
   _id: string;

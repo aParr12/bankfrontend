@@ -28,3 +28,7 @@ yarn-error.log*
 /server/secret.js
 
 /src/firebaseConfig.js
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
