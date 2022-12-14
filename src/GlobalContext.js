@@ -3,7 +3,7 @@ import { getAuth, GoogleAuthProvider, onAuthStateChanged, signInWithPopup } from
 import { initializeApp } from "firebase/app";
 import { Toast } from "./components/Toast";
 import { firebaseConfig } from "./firebaseConfig";
-import { SERVER_PATH } from "./index";
+import { SERVER_PATH } from "./SERVER_PATH";
 
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);

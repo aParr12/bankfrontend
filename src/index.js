@@ -6,8 +6,6 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.css";
 
-export const SERVER_PATH = process?.env?.REACT_APP_BASE_URL ?? "http://localhost:3001";
-
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
