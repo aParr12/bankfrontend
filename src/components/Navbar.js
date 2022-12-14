@@ -9,7 +9,9 @@ export const Navbar = () => {
     const {currentUser} = state;
 
     useEffect(() => {
-        getUser();
+        if (localStorage.getItem('authToken')){
+            getUser();
+        }
     }, []);
 
     return (<nav className='Navbar navbar navbar-expand-lg bg-light'>

@@ -25,3 +25,5 @@ yarn-error.log*
 # Project exclude paths
 /server/index.js
 /server/secret.js
+
+/src/firebaseConfig.js
