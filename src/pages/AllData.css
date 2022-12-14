@@ -1,0 +1,8 @@
+.AllData.CardStyling {
+    margin-top: 56px;
+    width: 600px;
+}
+
+.AllData.CardStyling .card-body, .CardStyling .card-title, .CardStyling .card-text {
+    padding: 8px;
+}

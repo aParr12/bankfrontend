@@ -1,0 +1,52 @@
+.Navbar .navbar-nav {
+    display: flex;
+    flex: 1 1 auto;
+}
+
+.Navbar .nav-link {
+    position: relative;
+    color: black;
+}
+
+.Navbar button.sign-out {
+    border: none;
+    margin-left: 10px;
+    background-color: transparent;
+    }
+
+.Navbar .nav-link .custom-tooltip {
+    display: block;
+    position: absolute;
+    top: 42px;
+    left: -40px;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 4px;
+    width: 200px;
+    background-color: white;
+    color: black;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 300ms, transform 300ms;
+    transition-delay: 500ms;
+}
+
+.Navbar .nav-link .custom-tooltip:after {
+    border-left: solid transparent 10px;
+    border-right: solid transparent 10px;
+    border-bottom: solid grey 10px;
+    top: -10px;
+    content: " ";
+    height: 0;
+    left: 40%;
+    margin-left: -13px;
+    position: absolute;
+    width: 0;
+}
+
+.Navbar .nav-link:hover .custom-tooltip {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
+}

@@ -1,0 +1,8 @@
+.Home.CardStyling {
+    margin-top: 56px;
+    width: 400px;
+}
+
+.Home.CardStyling .card-body, .CardStyling .card-title, .CardStyling .card-text {
+    padding: 8px;
+}

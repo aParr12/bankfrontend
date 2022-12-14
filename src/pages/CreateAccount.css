@@ -1,0 +1,8 @@
+.CreateAccount.CardStyling {
+    margin-top: 56px;
+    width: 400px;
+}
+
+.CreateAccount.CardStyling .card-body, .CardStyling .card-title, .CardStyling .card-text {
+    padding: 8px;
+}
